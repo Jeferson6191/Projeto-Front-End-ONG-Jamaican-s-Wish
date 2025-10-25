@@ -11,7 +11,7 @@
 }
 /* animação da pagina */
 section{
-    /* animation: starter 0.5s; */
+    animation: starter 0.5s;
 }
 /* configuralçao da estrutura do header */
 header{
@@ -87,4 +87,5 @@ header{
     border-top: 1px solid;
     text-align: center;
     padding-top: 3px;
+
 }
