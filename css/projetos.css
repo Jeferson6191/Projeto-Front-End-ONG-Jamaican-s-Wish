@@ -1,0 +1,84 @@
+/* padronização da pagina */
+h1, h2{
+    justify-content: center;
+    display: flex;
+}
+h2{
+padding-block: 3%;
+}
+/* deixando os cartões lado a lado */
+.conteiner{
+    display: flex;
+}
+section{
+    padding-inline: 5% ;
+    justify-items: center;
+}
+/* remoção da decoração de link do texto */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ajuste das imagens */
+.conteiner img{
+    width: 300px;
+    border-radius: 12px;
+}
+/* desenvolvimento dos cartoes de apresentação */
+.conteiner .projeto1,.projeto2,.projeto3{
+    display: grid;
+    background-color: rgb(240, 248, 238);
+    border: 1px solid #c1f4bb;
+    border-radius: 12px;
+    width: 350px;
+    justify-items: center;
+    text-align: left;
+    margin-bottom: 30% ;
+    height: 600px;
+    
+}
+/*centralização dos titulos */
+.conteiner .projeto1 h2,.projeto2 h2,.projeto3 h2{
+    text-align: center;
+    justify-items: center;
+}
+/* ajuste de posicionamento do conteúdo escritos dos cartões */
+.conteiner p{
+    padding-inline: 10%;
+}
+/* animação de pulsar quando o mouse estiver em cima */
+@keyframes focoanimacao{
+    0%{
+
+    }
+    50%{
+        box-shadow: 5px 5px 5px #c1f4bb ;
+        border-color:#d4ffcf ;
+        background-color: #e7f7e6;
+
+    }
+    90%{
+
+    }
+    100%{
+        box-shadow: 1px 1px 1px #c1f4bb;
+    }
+}
+/* chamado da animação quando passa o mouse por cima */
+.projeto1:hover,
+.projeto2:hover,
+.projeto3:hover{
+    animation: focoanimacao 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* deixando os cartões lado a lado */
+
+@media ((max-width: 1080px)) {
+    .conteiner{
+        display: grid;
+        
+    }
+    
+}
+

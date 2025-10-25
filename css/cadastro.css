@@ -1,0 +1,167 @@
+/* pre confinguração do body*/
+
+*{
+    font-family: sans-serif;
+    
+}
+section{
+    margin-inline: 25%;
+
+}
+@media ((max-width: 600px)) {
+    section{
+   margin-inline: 10%;
+}
+}
+
+/* configuração do conteiner */
+.conteiner{
+    margin-block: 90px;
+    background-color: #ecf4e8;
+    padding: 12;
+    padding-bottom: 50px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px #08350b;
+}
+/* configuração da descrição "cadastro" */
+.cadastro{
+    justify-items: center;
+    border-bottom: thin solid;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    position: static;
+
+}
+
+.form-box input,
+.form-box textarea{
+    text-decoration: none;
+    border: none;
+    background-color: #ffffff;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 1px #c1f4bb;
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 8%;
+    
+}
+/* animação de pulsar quando o input estiver em foco */
+@keyframes focoanimacao{
+    0%{
+
+    }
+    50%{
+        box-shadow: 3px 3px 5px #c1f4bb;
+        border-color:#d4ffcf ;
+    }
+    100%{
+        box-shadow: 1px 1px 1px #c1f4bb;
+        border-color:#cecece ;
+    }
+}
+/* solicitação da animação */
+.form-box input:focus
+,.form-box textarea:focus{
+animation: focoanimacao 3s ;
+animation-iteration-count: infinite;
+
+}
+
+/* configuração do conteudo dentro do conteiner */
+
+/* configuração da label das caixa de texto */
+.conteiner label{
+    display: flex;
+    margin-inline: 8%;
+    margin-block: 1% ;
+}
+
+/* ajustando alguns itens do lado direito */
+.conteiner-inf-basicas{
+    justify-content: grid;
+    margin: 0 auto;
+    position: absolute;
+}
+/* parte da esquerda do formulario */
+.form-box .conteiner-inf-pessoal  {
+    margin: 0 auto; 
+    display: grid;
+    justify-content: flex-end;
+    margin-right: 8% ;
+}
+.form-box textarea{
+    height: 100px;
+    display: flex;
+    position: relative;
+    margin-top: 3%;
+    width: 83%;
+}
+
+/* responsividade do site */
+@media ((max-width: 1080px)) {
+    .conteiner-inf-basicas{
+        display: grid;
+        justify-content: center;
+        position: relative;
+        padding-right: 8% ;
+    }
+    .form-box .conteiner-inf-pessoal  { 
+        display: grid;
+        justify-content: center;
+
+    }
+    
+    .form-box textarea{
+        height: 200px;
+        align-content: center;
+        margin-top: 3%;
+
+    }
+
+}
+#concluir{
+    text-decoration: none;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-block: 17px;
+    background-color: #0f7a04;
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+#concluir:hover{
+    background-color:  #0e9a06;
+    transition-duration: 0.5s;
+}
+
+
+#concluir:active{
+    background-color: #14be11 ;
+    transition-duration: 0.1s;
+}
+
+.Metododepagamento select,
+.Projetoajudar select{
+    text-decoration: none;
+    border: none;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 1px 1px 1px #c1f4bb;
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    outline: none;
+    margin-inline: 12%;
+}
+.Metododepagamento,
+.Projetoajudar{
+    display: grid;
+}

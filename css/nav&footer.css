@@ -1,0 +1,90 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes starter {
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+/* animação da pagina */
+section{
+    /* animation: starter 0.5s; */
+}
+/* configuralçao da estrutura do header */
+header{
+
+    padding-bottom: 12px;
+    padding-inline: 16px;
+    border-bottom: 1px solid #b1bfb4;
+}
+.navbar{
+    max-width: 1280px;
+    height: 70px;
+    padding-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* configuração das opçoes */
+.navlist{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+/* configuração dos links */
+.navlist a{
+    padding-inline: 16px;
+    padding-block: 16px;
+    color: rgb(45, 45, 45);
+    font-size: 15.5px;
+    
+}
+/* interação com os links no hover */
+.navlist a:hover{
+    background-color: #d3fed1;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+    
+
+}
+/* responsividade do header */
+@media (max-width: 454px) {
+.navlist a{
+    padding-inline: 6px;
+    padding-block: 6px;
+    border-radius: 6px;
+}
+}
+@media (max-width: 394px) {
+.navlist a{
+    padding-inline: 1px;
+    padding-block: 6px;
+    border-radius: 6px;
+}}
+/* retirando a decoração padrao dos links */
+.navlink{
+    text-decoration: none;
+}
+/* ajsute da imagem de logo do header */
+.logo img{
+    width: 50px;
+    background-color: #B6CEB4;
+    border-radius: 100px;
+    padding: 10%;
+    cursor: pointer;
+}
+/* interatividade com a imagem */
+.logo img:hover{
+    background-color: rgb(189, 189, 255);
+    transition-duration: 0.45s;
+}
+/* © 2025 ONG Jamaican's Wish — Todos os direitos reservados. */
+.footer{
+    border-color: #b1bfb4;
+    border-top: 1px solid;
+    text-align: center;
+    padding-top: 3px;
+}
