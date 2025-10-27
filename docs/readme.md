@@ -1,7 +1,7 @@
 <h1>Projeto ONG: Jamaican's Wish</h1>
 
 <h3>Acesso:</h3>
-    <a href="https://jeferson6191.github.io/Projeto-Front-End-ONG-Jamaican-s-Wish/" target="_blank">Clique aqui para acessar o WebSite</a>
+    <a href="" target="_blank">Clique aqui para acessar o WebSite</a>
 
 
 
@@ -17,5 +17,4 @@
     <li>HTML </li>
     <LI>CSS</LI>
     <LI>JAVA SCRIPT</LI>
-
 </ul>
